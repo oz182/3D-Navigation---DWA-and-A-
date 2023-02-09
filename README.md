@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/91877982/217909303-61b3c168-a74f-4850-
 
 
 
-#The fusion algorithm concept
+# The fusion algorithm concept
 
 As described above, the purpose of the algorithm is to combine between global and local path planning algorithms. The general idea of this concept can be seen in the following chart:
 
@@ -71,7 +71,7 @@ Main loop – The main loop is the running center of the simulation. It has thre
 •	“ClacBreakingDist” – A function that constantly calculates the break distance of the robot (the distance that would take the robot to get to 0 velocity). This distance than used to check whether the robot can stop before colliding with the next chosen speed by the evaluation function.
 
 
-#Conclusions
+# Conclusions
 
 It can be seen in the result below, that the DWA algorithm serve as a good option in an unknown environment, and especially when it is needed to take in account the dynamical constrains of the robot (such as autonomous cars, Cruz missiles, etc.). When it gets combined with a global planning algorithm, as was suggested in the article and done in this simulation, it is easy to see that the robot does follow the shortest path of the A* algorithm and gives the DWA another plane of autonomy.
 
