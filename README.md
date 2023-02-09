@@ -80,3 +80,9 @@ It can be seen in the result below, that the DWA algorithm serve as a good optio
 
 In top view:
 <img width="298" alt="image" src="https://user-images.githubusercontent.com/91877982/217908956-6f8e60e6-7f4e-4cb5-95f3-c1972d32186a.png">
+
+
+Diffrent Test:
+<img width="791" alt="Screenshot 2023-02-09 at 20 34 09" src="https://user-images.githubusercontent.com/91877982/217946646-7fa034aa-601e-491a-9e06-1a682450e2f1.png">
+
+
