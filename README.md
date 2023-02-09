@@ -1,4 +1,6 @@
 
+## This project is a recreation of the method suggested in the paper: "Global Dynamic Path Planning Fusion Algorithm Combining Jump A Algorithm"
+
 
 
 https://user-images.githubusercontent.com/91877982/217909303-61b3c168-a74f-4850-8c20-bb44fe6a11c4.mp4
