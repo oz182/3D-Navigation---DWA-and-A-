@@ -1,3 +1,12 @@
+
+
+
+https://user-images.githubusercontent.com/91877982/217909303-61b3c168-a74f-4850-8c20-bb44fe6a11c4.mp4
+
+
+
+
+
 #The fusion algorithm concept
 
 As described above, the purpose of the algorithm is to combine between global and local path planning algorithms. The general idea of this concept can be seen in the following chart:
