@@ -27,20 +27,20 @@ For better understanding the entire scope of work that made in this paper, it is
 
 1.  A\* algorithm – A heuristic search algorithm used to calculate the optimal path in a static two-dimensional configuration space. It searches the optimal path node through the cost evaluation function as the next node to be traversed and repeats this process until the target point is found to form the optimal path.
 
-  The cost evaluation function is as follows: . where is the cost evaluation function of the current position , represents the actual cost of the robot from the    initial position to the current position , and represents the estimated cost of the robot from the current position to the target position. The cost can be thought as  a distance. The algorithm aims to choose the next node with the lowest .
+    The cost evaluation function is as follows: . where is the cost evaluation function of the current position , represents the actual cost of the robot from the    initial position to the current position , and represents the estimated cost of the robot from the current position to the target position. The cost can be thought as  a distance. The algorithm aims to choose the next node with the lowest .
 
 
 ![image](https://user-images.githubusercontent.com/91877982/218310943-da7133d9-856f-4c5f-8d3e-1112d5473e5d.png)
 
 
-As can be seen in the example above, the green nodes are nodes that haven’t been explored, the red nodes are explored nodes, and the blue nodes are the selected nodes for the path. In each node, the centered large number is the , the left corner number is the , and the right corner number is the .
-Straight distances are taken to be 10 and thus the diagonal distances can be taken to be 14 (as in 90 degrees tringle).
+    As can be seen in the example above, the green nodes are nodes that haven’t been explored, the red nodes are explored nodes, and the blue nodes are the selected nodes for the path. In each node, the centered large number is the , the left corner number is the , and the right corner number is the .
+    Straight distances are taken to be 10 and thus the diagonal distances can be taken to be 14 (as in 90 degrees tringle).
 It is important to mention that although the algorithm most likely to find the optimal path, it sometimes can be power consuming due to search in non-relevant directions (calculates the evaluation function of all the nearby nodes).
 
-1.  DWA algorithm – A local path planning algorithm (unknown environments, sensor based), which not only navigate to the target without crash into obstacles, but also does that while taking in account the dynamic constrains of the robot (Rotational and straight velocities and accelerations). The algorithm is composed for the following main parts:
+2.  DWA algorithm – A local path planning algorithm (unknown environments, sensor based), which not only navigate to the target without crash into obstacles, but also does that while taking in account the dynamic constrains of the robot (Rotational and straight velocities and accelerations). The algorithm is composed for the following main parts:
 -   **Creating the dynamic window** – The dynamic window consist of all the velocities that the robot can do in the next time interval, with taking in account the distance to obstacles and the dynamic constrains of the robot.
 
-    ![](media/2a4d6bbc10681f290a5cf7acafd7233e.png)
+    ![image](https://user-images.githubusercontent.com/91877982/218311101-61ae8324-ccf9-4772-8b17-12d68a9be3a6.png)
 
     In the figure above, you can find an illustration of the construction of the search space. When and axis are and (rotational and straight velocities).
 
