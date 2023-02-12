@@ -37,6 +37,32 @@ As can be seen in the example above, the green nodes are nodes that haven’t be
 Straight distances are taken to be 10 and thus the diagonal distances can be taken to be 14 (as in 90 degrees tringle).
 It is important to mention that although the algorithm most likely to find the optimal path, it sometimes can be power consuming due to search in non-relevant directions (calculates the evaluation function of all the nearby nodes).
 
+1.  DWA algorithm – A local path planning algorithm (unknown environments, sensor based), which not only navigate to the target without crash into obstacles, but also does that while taking in account the dynamic constrains of the robot (Rotational and straight velocities and accelerations). The algorithm is composed for the following main parts:
+-   **Creating the dynamic window** – The dynamic window consist of all the velocities that the robot can do in the next time interval, with taking in account the distance to obstacles and the dynamic constrains of the robot.
+
+    ![](media/2a4d6bbc10681f290a5cf7acafd7233e.png)
+
+    In the figure above, you can find an illustration of the construction of the search space. When and axis are and (rotational and straight velocities).
+
+    The construction of the dynamic window will be done by the following steps:
+
+    First the search space will be construct by this expression:
+
+    This expression describes the entire dynamic capabilities of the robot.
+
+    Then, we reduce the search space to the only velocities that are in a breaking distance from an obstacle.
+
+    The next expression contains the velocities that can be reached in the next time interval, according to the acceleration and velocities.
+
+    The last step is to intersects all the expiration together to get the most reduced widow which construct from all the conditions above.
+
+-   **Calculate the evaluation function** – In order to choose the best trajectory to move along, the algorithm calculates the evaluation function of each velocity couple (). The evaluation function is as follows:
+
+    When is the direction to the target (higher when directly towards the target), is the distance from an obstacle (as close the obstacle, as lower the score), and is the robot’s velocity (score is higher when the velocity is higher).
+
+Based on the above method, the algorithm can select the best trajectory to move along
+
+For getting the safest and best path according to the evaluation function’s wights.
 
 
 # The fusion algorithm concept
