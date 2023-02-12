@@ -1,5 +1,5 @@
 
-## This project is a recreation of the method suggested in the paper: "Global Dynamic Path Planning Fusion Algorithm Combining Jump A Algorithm"
+## This project is a recreation of the method suggested in the paper: "Global Dynamic Path Planning Fusion Algorithm Combining A* Algorithm and DWA"
 
 
 
