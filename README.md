@@ -27,7 +27,7 @@ For better understanding the entire scope of work that made in this paper, it is
 
 1.  A\* algorithm – A heuristic search algorithm used to calculate the optimal path in a static two-dimensional configuration space. It searches the optimal path node through the cost evaluation function as the next node to be traversed and repeats this process until the target point is found to form the optimal path.
 
-The cost evaluation function is as follows: . where is the cost evaluation function of the current position , represents the actual cost of the robot from the initial position to the current position , and represents the estimated cost of the robot from the current position to the target position. The cost can be thought as a distance. The algorithm aims to choose the next node with the lowest .
+  The cost evaluation function is as follows: . where is the cost evaluation function of the current position , represents the actual cost of the robot from the    initial position to the current position , and represents the estimated cost of the robot from the current position to the target position. The cost can be thought as  a distance. The algorithm aims to choose the next node with the lowest .
 
 
 ![image](https://user-images.githubusercontent.com/91877982/218310943-da7133d9-856f-4c5f-8d3e-1112d5473e5d.png)
