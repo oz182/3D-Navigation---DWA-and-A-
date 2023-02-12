@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/91877982/217909303-61b3c168-a74f-4850-
 **Notice** – All the MATLAB and Simulink code was made with version 2020b. there might be problems running the files on an older/newer version of MATLAB.
 
 
-**Path planning algorithm based on a research paper**
+# Path planning algorithm based on a research paper
 
 **The research paper -** “Global Dynamic Path Planning Fusion Algorithm Combining Jump-A Algorithm and Dynamic Window Approach”
 
@@ -30,6 +30,12 @@ For better understanding the entire scope of work that made in this paper, it is
 The cost evaluation function is as follows: . where is the cost evaluation function of the current position , represents the actual cost of the robot from the initial position to the current position , and represents the estimated cost of the robot from the current position to the target position. The cost can be thought as a distance. The algorithm aims to choose the next node with the lowest .
 
 
+![image](https://user-images.githubusercontent.com/91877982/218310943-da7133d9-856f-4c5f-8d3e-1112d5473e5d.png)
+
+
+As can be seen in the example above, the green nodes are nodes that haven’t been explored, the red nodes are explored nodes, and the blue nodes are the selected nodes for the path. In each node, the centered large number is the , the left corner number is the , and the right corner number is the .
+Straight distances are taken to be 10 and thus the diagonal distances can be taken to be 14 (as in 90 degrees tringle).
+It is important to mention that although the algorithm most likely to find the optimal path, it sometimes can be power consuming due to search in non-relevant directions (calculates the evaluation function of all the nearby nodes).
 
 
 
