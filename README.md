@@ -9,6 +9,29 @@ https://user-images.githubusercontent.com/91877982/217909303-61b3c168-a74f-4850-
 **Notice** – All the MATLAB and Simulink code was made with version 2020b. there might be problems running the files on an older/newer version of MATLAB.
 
 
+**Path planning algorithm based on a research paper**
+
+**The research paper -** “Global Dynamic Path Planning Fusion Algorithm Combining Jump-A Algorithm and Dynamic Window Approach”
+
+**Description and contributions**
+
+In this paper, the researchers introduce a new method for combining two path planning algorithms to get a fusion version with better performance (This improvement can be mainly seen as a global optimization and path smoothness).
+
+The core of the algorithm is based on the “dynamic window approach” algorithm, which then being integrated with the A\* global path planning. This fusion, outputs a safe, global optimal path with high smoothness.
+
+In more detailed manner, the new fusion algorithm creates not only the shortest path to the target (which is also considered as safe in terms of the robot’s dynamics capabilities) but also gives a smooth path which fits to the more natural and fluids movements.
+
+**Separate description of each algorithm (A\* & DWA)**
+
+For better understanding the entire scope of work that made in this paper, it is important to understand the principles of each path planning algorithm that used in this paper:
+
+1.  A\* algorithm – A heuristic search algorithm used to calculate the optimal path in a static two-dimensional configuration space. It searches the optimal path node through the cost evaluation function as the next node to be traversed and repeats this process until the target point is found to form the optimal path.
+
+The cost evaluation function is as follows: . where is the cost evaluation function of the current position , represents the actual cost of the robot from the initial position to the current position , and represents the estimated cost of the robot from the current position to the target position. The cost can be thought as a distance. The algorithm aims to choose the next node with the lowest .
+
+
+
+
 
 # The fusion algorithm concept
 
