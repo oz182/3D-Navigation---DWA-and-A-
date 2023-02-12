@@ -30,11 +30,11 @@ For better understanding the entire scope of work that made in this paper, it is
     The cost evaluation function is as follows: . where is the cost evaluation function of the current position , represents the actual cost of the robot from the    initial position to the current position , and represents the estimated cost of the robot from the current position to the target position. The cost can be thought as  a distance. The algorithm aims to choose the next node with the lowest .
 
 
-![image](https://user-images.githubusercontent.com/91877982/218310943-da7133d9-856f-4c5f-8d3e-1112d5473e5d.png)
+![image](https://user-images.githubusercontent.com/91877982/218310943-da7133d9-856f-4c5f-8d3e-1112d5473e5d.png).
 
 
-    As can be seen in the example above, the green nodes are nodes that haven’t been explored, the red nodes are explored nodes, and the blue nodes are the selected nodes for the path. In each node, the centered large number is the , the left corner number is the , and the right corner number is the .
-    Straight distances are taken to be 10 and thus the diagonal distances can be taken to be 14 (as in 90 degrees tringle).
+As can be seen in the example above, the green nodes are nodes that haven’t been explored, the red nodes are explored nodes, and the blue nodes are the selected nodes for the path. In each node, the centered large number is the , the left corner number is the , and the right corner number is the .
+Straight distances are taken to be 10 and thus the diagonal distances can be taken to be 14 (as in 90 degrees tringle).
 It is important to mention that although the algorithm most likely to find the optimal path, it sometimes can be power consuming due to search in non-relevant directions (calculates the evaluation function of all the nearby nodes).
 
 2.  DWA algorithm – A local path planning algorithm (unknown environments, sensor based), which not only navigate to the target without crash into obstacles, but also does that while taking in account the dynamic constrains of the robot (Rotational and straight velocities and accelerations). The algorithm is composed for the following main parts:
