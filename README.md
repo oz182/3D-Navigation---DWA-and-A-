@@ -40,7 +40,8 @@ It is important to mention that although the algorithm most likely to find the o
 2.  DWA algorithm – A local path planning algorithm (unknown environments, sensor based), which not only navigate to the target without crash into obstacles, but also does that while taking in account the dynamic constrains of the robot (Rotational and straight velocities and accelerations). The algorithm is composed for the following main parts:
 -   **Creating the dynamic window** – The dynamic window consist of all the velocities that the robot can do in the next time interval, with taking in account the distance to obstacles and the dynamic constrains of the robot.
 
-    ![image](https://user-images.githubusercontent.com/91877982/218311101-61ae8324-ccf9-4772-8b17-12d68a9be3a6.png)
+    ![image](https://user-images.githubusercontent.com/91877982/218311101-61ae8324-ccf9-4772-8b17-12d68a9be3a6.png){: width="300px"}
+
 
     In the figure above, you can find an illustration of the construction of the search space. When and axis are and (rotational and straight velocities).
 
